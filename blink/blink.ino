@@ -5,8 +5,20 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW);
-  delay(1000);
+  digitalWrite(12, HIGH); // turns light on
+  delay(1000); // duration is 1 second
+  digitalWrite(12, LOW); // turns light off
+  delay(2000); // duration is 2 seconds
+  digitalWrite(12, HIGH); // turns light on
+  delay(2000); // duration is 2 seconds
+  digitalWrite(12, LOW); // turns light off
+  delay(3000); // duration is 3 seconds
+  digitalWrite(12, HIGH); // turns light on
+  delay(3000); // duration is 3 seconds
+  digitalWrite(12, LOW); // turns light off
+  delay(4000); // duration is 4 seconds
+  digitalWrite(12, HIGH); // turns light on
+  delay(4000); // duration is 4 seconds
+  digitalWrite(12, LOW); // turns light off
+  delay(5000); // duration is 5 seconds
 }
