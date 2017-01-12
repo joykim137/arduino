@@ -9,10 +9,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(13, HIGH);
-  Serial.println("On");
-  delay(1000);
-  digitalWrite(13, LOW);
-  Serial.println("Off");
-  delay(1000);
+  if (Serial.readString() == "On") {
+    digitalWrite(13, HIGH);
+  }
+  else if (Serial.readString() == "Off") {
+    digitalWrite(13, LOW);
+  }
 }
