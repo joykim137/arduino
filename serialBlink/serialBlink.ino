@@ -13,7 +13,7 @@ void loop() {
   if (Serial.available() > 0) { // checks to see if anything is in the serial buffer
     String command; // create String variable comments
     command = Serial.readString(); // reads contents of serial buffer and stores them as command variable
-    if (command == "On") { // lines beneath are true if the command vairalbe is On
+    if (command == "On") { // lines beneath are true if the command variable is On
       Serial.println("OK, turning the light on..."); // makes serial monitor say "OK, turning the light on..."
       digitalWrite(13, HIGH); // turns light on
     }
