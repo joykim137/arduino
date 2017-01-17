@@ -1,7 +1,7 @@
 void setup() {
-  pinMode(9, OUTPUT)
+  Serial.begin(9600);
+  pinMode(9, OUTPUT);
 }
-
 void loop() {
   
 }
